@@ -8,25 +8,25 @@
          description: "Number of redis nodes."
          label: "Number of redis Nodes:"
          required: true
-         default: 1
+         default: "1"
          type: "int"
        - variable: "scale_pyapp"
          description: "Number of pyapp nodes."
          label: "Number of pyapp Nodes:"
          required: true
-         default: 2
+         default: "2"
          type: "int"
        - variable: "Bulid_Number"
          description: "version of pyapp."
          label: "version of pyapp:"
          required: true
-         default: 56
+         default: "56"
          type: "int"
        - variable: "Port_Number"
          description: "Port of pyapp."
          label: "Port of pyapp:"
          required: true
-         default: 6000
+         default: "6000"
          type: "int"
 
 redis:

@@ -10,8 +10,6 @@
          required: true
          default: 1
          type: "int"
-
-   questions:
        - variable: "scale_pyapp"
          description: "Number of pyapp nodes."
          label: "Number of pyapp Nodes:"

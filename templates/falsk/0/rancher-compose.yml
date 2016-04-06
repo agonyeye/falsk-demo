@@ -16,7 +16,7 @@
          required: true
          default: "2"
          type: "int"
-       - variable: "Bulid_Number"
+       - variable: "Build_Number"
          description: "version of pyapp."
          label: "version of pyapp:"
          required: true

@@ -30,14 +30,12 @@
          type: "int"
 
 redis:
-  scale:  |
-    ${scale_redis}
+  scale: ${scale_redis}
   metadata:
     io.rancher.service.hash: ca4e0e00b4af4d172ff3b94c8f0d631fb1670c50
 
 pyapp:
-  scale:  |
-    ${scale_pyapp}
+  scale: ${scale_pyapp}
   metadata:
     io.rancher.service.hash: bab1a465d6b5b59158eb1fc4c9ccece8e189809d
     
@@ -51,4 +49,3 @@ pyapplb:
     response_timeout: 2000
   metadata:
     io.rancher.service.hash: c4261e2046b1cf1b7392084130b69aab11216d5f
-

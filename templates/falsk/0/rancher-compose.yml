@@ -21,13 +21,13 @@
 
 redis:
   scale:  |
-  ${scale_redis}
+    ${scale_redis}
   metadata:
     io.rancher.service.hash: ca4e0e00b4af4d172ff3b94c8f0d631fb1670c50
 
 pyapp:
   scale:  |
-  ${scale_pyapp}
+    ${scale_pyapp}
   metadata:
     io.rancher.service.hash: bab1a465d6b5b59158eb1fc4c9ccece8e189809d
     

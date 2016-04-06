@@ -3,14 +3,34 @@
    version: 1.0.0-rancher
    description: |
     Cloudsoar falsk Web
+   questions:
+       - variable: "scale_redis"
+         description: "Number of redis nodes."
+         label: "Number of redis Nodes:"
+         required: true
+         default: 1
+         type: "int"
+
+   questions:
+       - variable: "scale_pyapp"
+         description: "Number of pyapp nodes."
+         label: "Number of pyapp Nodes:"
+         required: true
+         default: 2
+         type: "int"
+
 redis:
-  scale: 1
+  scale:  |
+  ${scale_redis}
   metadata:
     io.rancher.service.hash: ca4e0e00b4af4d172ff3b94c8f0d631fb1670c50
+
 pyapp:
-  scale: 2
+  scale:  |
+  ${scale_pyapp}
   metadata:
     io.rancher.service.hash: bab1a465d6b5b59158eb1fc4c9ccece8e189809d
+    
 pyapplb:
   scale: 1
   health_check:

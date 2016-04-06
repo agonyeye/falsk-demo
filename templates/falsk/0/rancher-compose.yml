@@ -3,7 +3,6 @@
   version: 1.0.0-rancher
   description: |
     Cloudsoar falsk Web
-  uuid:falsk-0
   questions:
     - variable: "scale_redis"
       description: "Number of redis nodes."

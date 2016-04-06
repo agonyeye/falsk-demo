@@ -16,6 +16,18 @@
          required: true
          default: 2
          type: "int"
+       - variable: "Bulid_Number"
+         description: "version of pyapp."
+         label: "version of pyapp:"
+         required: true
+         default: 56
+         type: "int"
+       - variable: "Port_Number"
+         description: "Port of pyapp."
+         label: "Port of pyapp:"
+         required: true
+         default: 6000
+         type: "int"
 
 redis:
   scale:  |
